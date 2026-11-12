@@ -1,0 +1,5 @@
+# Adventurers' Guild Portfolio Robots
+User-agent: *
+Allow: /
+
+Sitemap: https://sudhir-guild-portfolio.vercel.app/sitemap.xml

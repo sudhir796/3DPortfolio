@@ -1,0 +1,16 @@
+{
+  "name": "Sudhir | Adventurers' Guild 3D Portfolio",
+  "short_name": "GuildPortfolio",
+  "description": "Interactive 3D Anime Fantasy Adventurers' Guild Portfolio for Sudhir (AI/ML & Full-Stack Developer)",
+  "start_url": "/?mode=3d",
+  "display": "standalone",
+  "background_color": "#120d14",
+  "theme_color": "#120d14",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

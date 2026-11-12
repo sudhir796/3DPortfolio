@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #120d14;
+  color: #f6eedb;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Magic Cursor: hide default system pointer */
+html.hide-default-cursor,
+html.hide-default-cursor * {
+  cursor: none !important;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  outline: none;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #5ee6ff !important;
+  outline-offset: 3px !important;
+}
+
+/* Visually hidden utility for screen readers and SEO crawlers */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Custom styling for three-stdlib Stats widget when toggled */
+.stats-panel {
+  position: absolute !important;
+  top: 24px !important;
+  right: 28px !important;
+  left: auto !important;
+  z-index: 200 !important;
+  opacity: 0.9;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive mobile adjustments for Station Panel (< 640px) */
+@media (max-width: 640px) {
+  .station-panel-wrapper {
+    top: auto !important;
+    bottom: 24px !important;
+    left: 16px !important;
+    right: 16px !important;
+    transform: none !important;
+    max-width: calc(100vw - 32px) !important;
+    width: calc(100vw - 32px) !important;
+  }
+
+  .station-panel-card {
+    padding: 16px 18px !important;
+    max-height: 50vh !important;
+  }
+
+  .station-panel-card h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .station-panel-card p {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Dot nav on mobile */
+  .dot-nav-wrapper {
+    right: 12px !important;
+    gap: 12px !important;
+  }
+}

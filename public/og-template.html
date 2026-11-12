@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background-color: #120d14;
+      background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 179, 71, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 85% 85%, rgba(94, 230, 255, 0.12) 0%, transparent 45%);
+      color: #f6eedb;
+      font-family: 'Cinzel', Georgia, serif;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      border: 12px solid #1c141d;
+    }
+    .filigree-border {
+      position: absolute;
+      inset: 16px;
+      border: 2px solid rgba(212, 175, 55, 0.6);
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      background: rgba(168, 35, 40, 0.85);
+      border: 1px solid #d4af37;
+      color: #f6eedb;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+    h1 {
+      font-size: 64px;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      color: #f6eedb;
+      margin: 16px 0 10px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.9);
+    }
+    .classes {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .class-tag {
+      padding: 6px 16px;
+      border-radius: 4px;
+      background: rgba(94, 230, 255, 0.15);
+      border: 1.5px solid #5ee6ff;
+      color: #5ee6ff;
+      font-family: monospace;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .tagline {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 22px;
+      color: #ebdcb9;
+      max-width: 800px;
+      line-height: 1.5;
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1.5px solid rgba(212, 175, 55, 0.4);
+      padding-top: 20px;
+    }
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      color: #ffb347;
+      letter-spacing: 0.08em;
+    }
+    .footer-right {
+      font-family: monospace;
+      font-size: 18px;
+      color: #5ee6ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="filigree-border"></div>
+  <div>
+    <div class="badge">✦ Interactive 3D Adventurers' Guild Portfolio</div>
+    <h1>SUDHIR</h1>
+    <div class="classes">
+      <div class="class-tag">AI/ML Developer</div>
+      <div class="class-tag">Full-Stack Developer</div>
+    </div>
+    <div class="tagline">
+      Building applied-AI and full-stack projects in a stylized anime-fantasy adventurers' guild hall.
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <span>⚔</span>
+      <span>Sri Eshwar College of Engineering</span>
+    </div>
+    <div class="footer-right">
+      <span>Three.js • React • WebGL</span>
+    </div>
+  </div>
+</body>
+</html>
